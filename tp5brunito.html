@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante "Las Cañas" </title>
+</head>
+<body>
+    <h1>Menu del Restaurante "Las Cañas"</h1>
+<table>
+ <thead>
+    <tr>
+     <th>Plato.</th>
+     <th>Descripcion.</th>
+     <th>Precio.</th>
+     <th>Imagen del plato.</th>
+    </tr>
+ </thead>
+    <tbody>
+        <tr>
+            <td>Arroz Chaufa.</td>
+            <td>Salteado con huevo, verdeo y salsa de soja</td>
+            <td>9.300 $ ARG</td>
+            <td><img src="chaulafan-de-pollo.webp" alt="Plato de chaufan de pollo." width="100"></td>
+        </tr>
+        <tr>
+             <td>Pechuga a las finas hierbas.</td>
+             <td>Oliva, salvia, romero, estragón, acompañado con puré de papas</td>
+             <td>10.200 $ ARG</td>
+             <td><img src="pollo-a-las-finas-hierbas.jpg" alt="Pollo a las finas hierbas" width="100"></td>
+        </tr>
+        <tr>
+             <td>Lomo a la tirolesa.</td>
+             <td>Cebolla, panceta, champiñones y aceitunas con papas doree</td> 
+             <td>15.900 $ ARG</td>
+             <td><img src="lomo-a-la-tirolesa-un.jpg" alt="Lomo a la tirolesa" width="100"></td>
+         </tr>
+          <tr>
+             <td>Merluza al limon.</td>
+             <td>Suave salsa crema de limón con mil hojas de papas</td>
+             <td>10.200 $ ARG</td>
+             <td><img src="merluza_limon-6b9.webp" alt="merluza limon" width="100"></td>
+          </tr>
+          <tr>
+             <td>Merluza a la mediterranea.</td>
+             <td>Oliva, tomate concasse, albahaca y aceitunas con papas al natural</td>
+             <td>10.200 $ ARG</td>
+             <td><img src="media-image-01.jpg" alt="merluza a la mediterranea" width="100"></td>
+          </tr>
+          <tr>
+             <td>Salmon rosado oriental.</td>
+             <td>En salsa curry, Laurel, vino blanco y crema acompañado con arroz</td>
+             <td>16.900 $ ARG</td>
+             <td><img src="images.jpeg" alt="Salmon rosado oriental" width="100"></td>
+          </tr>
+    </tbody>
+</table>
+
+<h2>Formulario de Reserva</h2>
+
+<form action="#">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="personas">Cantidad de personas:</label>
+    <input type="number" id="personas" name="personas" min="1" required>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora" required>
+<br>
+    <label for="comentarios">Comentarios (opcional):</label>
+    <textarea id="comentarios" name="comentarios"></textarea>
+
+    <button type="submit">Enviar reserva</button>
+</form>
+</body>
+</html>
