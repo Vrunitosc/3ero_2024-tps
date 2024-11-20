@@ -3,103 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga Profesional Argentina de Fútbol</title>
+    <title>Club Tristán Suárez</title>
     <link rel="stylesheet" href="tp10.css">
 </head>
 <body>
-    <header>
-        <h1>Liga Profesional Argentina</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="Inicio">Inicio</a></li>
-            <li><a href="#">Tabla de Posiciones</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Próximos Partidos</a></li>
-            <li><a href="#">Equipos</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Tabla de Posiciones</h2>
-            <p>Consulta la tabla de posiciones actualizada de la Liga Profesional.</p>
-            <!-- Aquí puedes añadir una tabla o lista con las posiciones -->
-        </section>
-        <section>
-            <h2>Noticias</h2>
-            <p>Lee las últimas noticias sobre la Liga Profesional Argentina.</p>
-            <!-- Aquí puedes añadir noticias recientes -->
-        </section>
-        <section>
-            <h2>Próximos Partidos</h2>
-            <p>Consulta los próximos partidos y horarios de la liga.</p>
-            <!-- Aquí puedes añadir una lista o calendario de partidos -->
-        </section>
-        <section>
-            <h2>Equipos</h2>
-            <p>Conoce a los equipos que participan en la liga.</p>
-            <!-- Aquí puedes añadir una lista o información sobre los equipos -->
-        </section>
-        <section>
-            <h2>Tabla de Posiciones</h2>
-            <p>Consulta la tabla de posiciones actualizada de la Liga Profesional.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Posición</th>
-                        <th>Equipo</th>
-                        <th>Puntos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Velez</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Atl. Tucuman</td>
-                        <td>25</td>
-                    </tr>
-                    <!-- Añadir más filas según sea necesario -->
-                </tbody>
-            </table>
-        </section>
-        <section>
-            <h2>Noticias</h2>
-            <p>Lee las últimas noticias sobre la Liga Profesional Argentina.</p>
-            <article>
-                <h3>Noticia 1</h3>
-                <p>Resumen de la noticia 1.</p>
-            </article>
-            <article>
-                <h3>Noticia 2</h3>
-                <p>Resumen de la noticia 2.</p>
-            </article>
-        </section>
-        <section>
-            <h2>Próximos Partidos</h2>
-            <p>Consulta los próximos partidos y horarios de la liga.</p>
+    <div class="grid-container">
+        <header>
+            <div class="logo-container">
+                <img src= "cropped-escudotristansuarez-1.webp"Escudo del Club Tristán Suárez">
+                <h1>Club Tristán Suárez</h1>
+            </div>
+        </header>
+        
+        <nav>
             <ul>
-                <li>Equipo A vs Equipo B - 15 de septiembre, 21:00</li>
-                <li>Equipo C vs Equipo D - 16 de septiembre, 19:00</li>
-                <!-- Añadir más partidos según sea necesario -->
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Equipos</h2>
-            <p>Conoce a los equipos que participan en la liga.</p>
+        </nav>
+        
+        <aside class="sidebar">
+            <h2>Enlaces de Interés</h2>
             <ul>
-                <li>Equipo A</li>
-                <li>Equipo B</li>
-                <li>Equipo C</li>
-                <!-- Añadir más equipos según sea necesario -->
+                <li><a href="#partidos">Próximos Partidos</a></li>
+                <li><a href="#galeria">Galería</a></li>
             </ul>
-        </section>      
-    </main>
-    <footer>
-        <p>&copy; 2024 Liga Profesional Argentina. Todos los derechos reservados.</p>
-    </footer>
+        </aside>
+        
+        <main>
+            <section id="historia">
+                <h2>Historia del Club</h2>
+                <p>El Club Tristán Suárez es un club de fútbol argentino fundado el 8 de agosto de 1929 en la localidad de Tristán Suárez, ubicada en el partido de Ezeiza, provincia de Buenos Aires.</p>
+            </section>
+            <section id="Fundacio">
+                <h2>Fundación</h2>
+                <p>El club fue fundado en 1923 bajo el nombre “Sportivo Suarense” y cambió su nombre a Sportivo Tristán Suárez en 1929.</p>   
+            </section>
+            <section id="Estadio">
+                <h2>Estadio</h2>
+                <img src="tristan-suarez011-1.webp" alt="">
+                <p>El estadio del club, llamado “20 de Octubre”, fue inaugurado el 24 de mayo de 1964 y cuenta con una capacidad para 15.000 espectadores.</p> 
+            </section>
+        </main>
+        
+        <aside class="ads">
+            <h2>Titulos del Club Tristan Surez</h2>
+             <li>Primera D (1975)</li>
+             <li>Primera C Apertura (1994)</li>
+             <li>Primera B Metropolitana Apertura (1996)</li>
+             <li>Final Reducido Primera B (2020)</li>
+            <h2>Datos curiosos</h2>
+            <p>Diego Maradona visitó el estadio del Club Tristán Suárez en 2019. Según los registros, Maradona asistió al partido entre Tristán Suárez y Brown de Adrogué, en el Estadio 20 de Octubre, y se unió a la charla técnica del equipo antes del partido. Luego, disfrutó de la victoria de Tristán Suárez por 1-0 y se mostró emocionado y alegre entre los jugadores y el público. También se lo vio aplaudiendo a un jugador, Daniel Bazán Vera, después de que convirtiera un penal, y le pidió al arquero Horacio Ramírez que se quedara con la pelota en los últimos segundos del partido. Esta visita fue documentada en varios medios de comunicación y se considera un momento especial y emocionante para los aficionados del club.</p>
+            <img src="ByhxohLxQ_1256x620__1.jpg" alt="Maradona en el palco de la cancha 20 de octubre" width="500">
+            <p>Gracias por aportar tu granito de arena al club, Nunca te vamos a olvidar D10S.</p>
+            <img src="600x400_alrededor-estadio-tristan-suarez-hay-murales-honor-gesta-seleccion-1986-1034541-151102.webp" alt="">
+        </aside>
+        
+        <footer>
+            <p>&copy; 2024 Club Tristán Suárez. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>

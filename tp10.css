@@ -1,140 +1,113 @@
-/* Estilos generales */
+/* styles.css */
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background: url('0002847-01l.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
-/* Estructura Grid */
-body {
+
+.grid-container {
     display: grid;
-    grid-template-areas: 
-        "header header"
-        "nav main"
-        "footer footer";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "sidebar main ads"
+        "footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
     height: 100vh;
 }
 
-/* Header */
+/* Estilos de las áreas */
 header {
     grid-area: header;
-    background-color: #0056a0; /* Azul Profundo */
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 4px solid #ff6f61; /* Coral Vivo */
+    background-color: rgba(0, 51, 102, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 header h1 {
+    font-size: 2rem;
     margin: 0;
 }
 
-/* Nav */
 nav {
     grid-area: nav;
-    background-color: #007bff; /* Azul Vivo */
-    padding: 1rem;
+    background-color: rgba(0, 85, 170, 0.8);
+    text-align: center;
+    padding: 10px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0.5rem 0;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgba(0, 85, 170, 0.8);
+    padding: 20px;
 }
 
-/* Main */
 main {
     grid-area: main;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    color: black;
 }
 
-/* Section */
-section {
-    background-color: #ffffff;
-    border: 2px solid #007bff; /* Azul Vivo */
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.ads {
+    grid-area: ads;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
 }
 
-section h2 {
-    color: #0056a0; /* Azul Profundo */
-}
-
-/* Footer */
 footer {
     grid-area: footer;
-    background-color: #0056a0; /* Azul Profundo */
-    color: white;
-    padding: 1rem;
+    background-color: rgba(0, 51, 102, 0.8);
     text-align: center;
-    border-top: 4px solid #ff6f61; /* Coral Vivo */
+    padding: 10px;
 }
 
-footer p {
-    margin: 0;
-}
-/* Mejorar la apariencia */
-header h1 {
-    font-size: 2.5rem;
-}
-
-nav ul li a {
-    font-size: 1.1rem;
-}
-
-section {
-    background-color: #ffffff;
-    border: 2px solid #007bff; /* Azul Vivo */
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 0 12px rgba(0,0,0,0.15);
-}
-
-section h2 {
-    font-size: 1.5rem;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #007bff; /* Azul Vivo */
-}
-
-th, td {
-    padding: 0.5rem;
-    text-align: center;
-}
-
-th {
-    background-color: #0056a0; /* Azul Profundo */
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+/* Responsivo */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "ads"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto auto;
+    }
 }
